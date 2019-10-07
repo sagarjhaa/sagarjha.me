@@ -3,9 +3,10 @@ import React from "react"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import './index.scss';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout centered>
     <SEO title="Home" keywords={[`karlo delalic`, `portfolio`, `fullstack developer`, `software engineer`, `react`]} />
     <div style={{ maxWidth: `175px`, margin: `0 auto 1.45rem auto` }}>
       <Image />
