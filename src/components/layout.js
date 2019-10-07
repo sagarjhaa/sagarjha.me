@@ -10,17 +10,15 @@ import React from "react"
 import Header from "./header"
 import "./layout.scss"
 
-const Layout = ({ children }) => (
+const Layout = props => (
     <React.Fragment>
-        <Header/>
-        <div
-            className="content"
-        >
-            <main>{children}</main>
-        </div>
+      <Header />
+      <div className={`content${props.centered ? " centered" : ""}`}>
+        {props.title && <h1 className="title">{props.title}</h1>}
+        <main>{props.children}</main>
+      </div>
     </React.Fragment>
-)
-
-
-export default Layout
+  )
+  
+  export default Layout
 
