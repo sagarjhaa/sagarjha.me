@@ -21,6 +21,7 @@
     "react-helmet": "^5.2.1"
   },
   "devDependencies": {
+    "netlify-cli": "^2.47.0",
     "prettier": "^1.19.1"
   },
   "keywords": [
@@ -33,7 +34,9 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "dev-deploy": "npm run build && netlify deploy",
+    "prod-deploy": "npm run build && netlify deploy --prod"
   },
   "repository": {
     "type": "git",
