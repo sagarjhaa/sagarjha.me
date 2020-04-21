@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -9,7 +9,7 @@ const Blog = (data) => {
     <SEO title="Blog" />
     {data.data.allMarkdownRemark.edges.map(({ node }) =>
       <div key={node.id}>
-        <h4>{node.frontmatter.title}</h4>
+        <Link to={node.fields.slug}>{node.frontmatter.title}</Link>
         <p>{node.excerpt}</p>
         <p><span>{node.frontmatter.date}</span> <span>({node.timeToRead} minutes)</span></p>
       </div>
@@ -28,9 +28,11 @@ export const query = graphql`
             title
             date
           }
+          fields {
+            slug
+          }
           excerpt
           timeToRead
-          html
         }
       }
     }
