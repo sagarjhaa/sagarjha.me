@@ -4,7 +4,6 @@ import AppBar from "@material-ui/core/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Typography from "@material-ui/core/Typography"
 import IconButton from "@material-ui/core/IconButton"
-import MenuIcon from "@material-ui/icons/Menu"
 import { Link } from "gatsby"
 
 const useStyles = makeStyles(theme => ({
@@ -33,7 +32,7 @@ export default function Navbar() {
             aria-label="menu"
           >
             {/* <MenuIcon /> */}
-            Sagar Jha
+            <Link to="/">Sagar Jha</Link>
           </IconButton>
           <Typography variant="h6" className={classes.title}>
             <Link to="/aboutme/">about me</Link>
