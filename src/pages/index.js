@@ -4,17 +4,42 @@ import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import { FaPencilAlt, FaProjectDiagram } from "react-icons/fa";
+import { AiOutlineGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
+import { GrProjects } from "react-icons/gr";
+
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
+    <section className="main">
+      <img src='https://via.placeholder.com/150' className='main-image'></img>
+      <h1 className='full-name'>Sagar Jha</h1>
+      <h3 className='position'>Full Stack Engineer</h3>
+
+      <p className='tag-line'>Love to do experiments with technology and <br />passonate about finance knowledge</p>
+
+      <div className='button-container'>
+        <a className='link-button' href='/blog'>
+          <FaPencilAlt />
+          Writings
+        </a>
+        <a className='link-button'>
+          <FaProjectDiagram />
+          Projects
+        </a>
+        <a className='link-button' target='_blank' href='https://github.com/sagarjhaa'>
+          <AiOutlineGithub />
+          Github
+        </a>
+        <a className='link-button' target='_blank' href='https://www.linkedin.com/in/sagarjhaa/'>
+          <FaLinkedinIn />
+          Linkedin
+        </a>
+      </div>
+
+    </section>
   </Layout>
 )
 

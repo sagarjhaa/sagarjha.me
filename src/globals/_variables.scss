@@ -1,0 +1,22 @@
+$primary-color: rgb(45, 80, 197);
+$white: rgb(255, 255, 255);
+
+$main-container-width: 50em;
+$black: rgb(0, 0, 0);
+$black-border: rgb(190, 192, 196);
+$border-shadow: 30px 10px 30px 1px rgb(190, 192, 196);
+
+// override chrome default css
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
