@@ -14,7 +14,7 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <section className="main">
-      <img src='https://via.placeholder.com/150' className='main-image'></img>
+      <Image className='main-image' />
       <h1 className='full-name'>Sagar Jha</h1>
       <h3 className='position'>Full Stack Engineer</h3>
 
