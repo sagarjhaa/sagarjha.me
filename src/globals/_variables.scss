@@ -24,3 +24,30 @@ h6 {
 a {
   text-decoration: none;
 }
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 2.8em;
+}
+
+/**
+ * If you only want to use line numbering
+ */
+
+.gatsby-highlight {
+  border-radius: 1.3em;
+  border: none;
+  padding: 10px;
+  // margin: 0.5em 0;
+  // padding: 1em;
+  // overflow: auto;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  border: none;
+  padding: 20px;
+  &.line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
+}
