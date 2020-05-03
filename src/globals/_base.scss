@@ -138,16 +138,10 @@ body {
     font-size: 3vw;
   }
   .container {
-    width: 100%;
+    width: 100vw;
   }
   .main {
     padding: 10px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 100vw;
   }
 }
 
