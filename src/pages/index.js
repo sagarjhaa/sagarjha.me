@@ -13,32 +13,37 @@ import { GrProjects } from "react-icons/gr";
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section className="main">
+    <section class='intro'>
       <Image className='main-image' />
       <h1 className='full-name'>Sagar Jha</h1>
       <h3 className='position'>Full Stack Engineer</h3>
-
       <p className='tag-line'>Love to do experiments with technology and <br />passonate about finance knowledge</p>
-
       <div className='button-container'>
         <a className='link-button' href='/blog'>
-          <FaPencilAlt />
-          Writings
+          <span class='link-button-symbol'>
+            <FaPencilAlt />
+            Writings
+          </span>
         </a>
         <a className='link-button'>
-          <FaProjectDiagram />
-          Projects
+          <span class='link-button-symbol'>
+            <FaProjectDiagram />
+            Projects
+          </span>
         </a>
         <a className='link-button' target='_blank' href='https://github.com/sagarjhaa'>
-          <AiOutlineGithub />
+          <span class='link-button-symbol'>
+            <AiOutlineGithub />
           Github
+          </span>
         </a>
         <a className='link-button' target='_blank' href='https://www.linkedin.com/in/sagarjhaa/'>
-          <FaLinkedinIn />
+          <span class='link-button-symbol'>
+            <FaLinkedinIn />
           Linkedin
+          </span>
         </a>
       </div>
-
     </section>
   </Layout>
 )

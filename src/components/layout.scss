@@ -1,1 +1,43 @@
 @import "../globals/_base.scss";
+
+// .blog {
+//   margin-top: 10px;
+
+//   &__post {
+//     font-weight: 200;
+//     color: red;
+//     a {
+//       text-decoration: none;
+//     }
+//   }
+// }
+
+.blog {
+  display: flex;
+  flex-direction: column;
+
+  &__post {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    text-align: left;
+
+    &__title {
+      margin-bottom: 5px;
+
+      &__link {
+        color: $primary-color;
+      }
+    }
+
+    &__excerpt {
+      line-height: 1.75;
+      margin-bottom: 15px;
+    }
+
+    &__info {
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.54);
+      margin: 0;
+    }
+  }
+}
