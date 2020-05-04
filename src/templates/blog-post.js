@@ -1,13 +1,17 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
+import { IoIosArrowRoundBack } from 'react-icons/io';
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <Layout>
-      <h1>{post.frontmatter.title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Link to='/blog'>
+        <IoIosArrowRoundBack /> back to posts
+      </Link>
+      <h1 className='blog__post__title__link'>{post.frontmatter.title}</h1>
+      <div className='blog__post__content' dangerouslySetInnerHTML={{ __html: post.html }} />
     </Layout>
   )
 }
