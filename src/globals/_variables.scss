@@ -1,0 +1,53 @@
+$primary-color: rgb(45, 80, 197);
+$white: rgb(255, 255, 255);
+
+$main-container-width: 50em;
+$black: rgb(0, 0, 0);
+$black-border: rgb(190, 192, 196);
+$border-shadow: 30px 10px 30px 1px rgb(190, 192, 196);
+
+// override chrome default css
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.gatsby-highlight pre[class*="language-"].line-numbers {
+  padding-left: 2.8em;
+}
+
+/**
+ * If you only want to use line numbering
+ */
+
+.gatsby-highlight {
+  border-radius: 1.3em;
+  border: none;
+  padding: 10px;
+  // margin: 0.5em 0;
+  // padding: 1em;
+  // overflow: auto;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  border: none;
+  padding: 20px;
+  &.line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
+}
