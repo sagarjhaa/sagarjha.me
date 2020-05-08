@@ -23,24 +23,25 @@ const Blog = (data) => {
 }
 
 export const query = graphql`
-  {
-    allMarkdownRemark {
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM D, YYYY")
-          }
-          fields {
-            slug
-          }
-          excerpt
-          timeToRead
+{
+  allMarkdownRemark(filter: {frontmatter: {disabled: {ne: true}}}, sort: {order: DESC, fields: frontmatter___date}) {
+    edges {
+      node {
+        id
+        frontmatter {
+          title
+          date(formatString: "MMMM D, YYYY")
+          disabled
         }
+        fields {
+          slug
+        }
+        excerpt
+        timeToRead
       }
     }
   }
+}
 `
 
 export default Blog
