@@ -145,6 +145,26 @@ body {
   }
 }
 
+/*
+Blog images
+*/
+
+.gatsby-resp-image-figure {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  box-shadow: $border-shadow;
+
+  figcaption {
+    text-align: center;
+    font-style: italic;
+    color: grey;
+    font-size: 1.2em;
+  }
+}
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 // @media only screen and (min-width: 600px) {...}
 
