@@ -19,14 +19,10 @@ Javascript does not know how to talk to internet innately.
 Browser has the ability to talk to the internet. So it has Fetch API that is available to
 developers to be used in Javscript as **fetch function**
 
-_Image of Javacsript Border_
-
-_Based on Browser Border_
-
 ## Since I promised, Lets talk about it.
 
 Promise is another object that javascript offers. It is a place holder for the values of future.
-It can be in one of the three states. :wink:
+It can be in one of the three states. :blush:
 
 - pending: initial state, neither fulfilled nor rejected.
 - fulfilled: meaning that the operation completed successfully.
@@ -80,6 +76,6 @@ Once the network request returned with the result, the microtask queue comes in 
 
 ![On network request completion, push task to microtask queue](./fetch-2.jpg)
 
-When the javascript has nothing to execute _(when the stack is empty)_ :wink:. It checks the microtask queue for any more task, which sure does have when the fetch is completed, the task gets out from the queue (dequed) and push on to the stack for javascript to execute. In our case, the task resolve the promise to console.log statement with a random color value. That is the reason the color comes last even it executes before the last console.log statement.
+When the javascript has nothing to execute _(when the stack is empty)_ :blush:. It checks the microtask queue for any more task, which sure does have when the fetch is completed, the task gets out from the queue (dequed) and push on to the stack for javascript to execute. In our case, the task resolve the promise to console.log statement with a random color value. That is the reason the color comes last even it executes before the last console.log statement.
 
 I always like to try things, so here is an example code for you to play. [Try your hands on the example](https://jsbin.com/vutaya/edit?js,console)
